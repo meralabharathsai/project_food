@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #ff7043;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav button {
+    margin-left: 20px;
+}
+
+/* Home */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #ffe0b2;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+
+button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e64a19;
+}
+
+/* Recipe Cards */
+
+.recipes,
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+/* Forms */
+
+.form-box {
+    width: 400px;
+    margin: 60px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.form-box h1 {
+    margin-bottom: 25px;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-box button {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.form-box a {
+    color: #ff5722;
+}
+
+.admin-info {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/* Dashboard */
+
+.dashboard {
+    padding: 40px;
+}
+
+.dashboard h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    nav {
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .recipes,
+    .grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .form-box {
+        width: 90%;
+    }
+}
